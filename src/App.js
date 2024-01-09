@@ -1,6 +1,5 @@
 import Particles from "react-particles";
 import { loadFireworksPreset } from "tsparticles-preset-fireworks";
-import { loadConfettiPreset } from 'tsparticles-preset-confetti';
 import { Typewriter } from "react-simple-typewriter";
 import { useState } from "react";
 import Countdown from "react-countdown";
@@ -13,7 +12,6 @@ function App() {
   ]);
 
   const particleInitialization = async (engine) => {
-    await loadConfettiPreset(engine);
     await loadFireworksPreset(engine);
   };
 
