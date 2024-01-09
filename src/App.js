@@ -32,7 +32,7 @@ function App() {
       />
       
       <div className="flex flex-col justify-center items-center min-h-screen gap-4 bg-black">
-        <span className="text-white text-4xl font-bold px-4 z-50">
+        <span className="text-white text-4xl font-bold px-4 z-50 text-center">
           <Typewriter
             words={birthdayMessage}
             loop={false}
@@ -40,7 +40,7 @@ function App() {
             cursor
           />
         </span>
-        <div className="z-50 text-white font-bold text-2xl">
+        <div className="z-50 text-white font-bold text-2xl text-center">
           <Countdown
             date={Date.now() + timeLeft()}
             onComplete={() =>
